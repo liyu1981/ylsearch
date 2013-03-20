@@ -1,0 +1,552 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet"></link>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="carbostorage/carbo.storage.js"></script>
+    <script type="text/javascript" src="ylsearch.js"></script>
+    <title>ylsearch demo</title>
+</head>
+<style>
+body {
+  margin: 20px 20px;
+}
+.accordion-heading {
+  background-color: #f0f0f0;
+}
+</style>
+<body>
+  <div class="stream">
+    <div class="listheader">
+      <span class="ylsearch-lsbox"></span>
+    </div>
+
+    <div>
+      <div class="accordion" id="accordion2">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2host" href="#HwTemplates">
+              <strong> Hardware Template Total 3 </strong>
+            </a>
+          </div>
+          <div id="HwTemplates" class="accordion-body collapse in" style="height: auto;">
+
+            <div id="hw1" class="accordion-inner detail-action">
+              <hr style="visibility: hidden;">
+              <div class="cell row">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Premier.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Premier </span>
+                        <span>ID: 1</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>CPU: 2</span>
+                        <span>Memory: 1024MB</span>
+                        <span>Disk: 4096MB</span>
+                        <span>NIC: 1</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>Platform: </span>
+                        <span>Description: </span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="hw2" class="accordion-inner detail-action">
+              <hr style="visibility: hidden;">
+              <div class="cell row">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Pro.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Pro </span>
+                        <span>ID: 2</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>CPU: 1</span>
+                        <span>Memory: 512MB</span>
+                        <span>Disk: 2048MB</span>
+                        <span>NIC: 1</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>Platform: </span>
+                        <span>Description: </span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="hw3" class="accordion-inner detail-action">
+              <hr style="visibility: hidden;">
+              <div class="cell row">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Physical%20Machine%20With%202G%20RAM.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Physical Machine With 2G RAM </span>
+                        <span>ID: 3</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>CPU: 2</span>
+                        <span>Memory: 2000MB</span>
+                        <span>Disk: 160000MB</span>
+                        <span>NIC: 1</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>Platform: </span>
+                        <span>Description: </span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2host" href="#OSTemplates">
+              <strong>
+                OS Template
+                Total
+                13
+              </strong>
+            </a>
+          </div>
+          <div id="OSTemplates" class="accordion-body collapse in" style="height: auto;">
+
+            <div id="os1" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Windows2008.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Windows2008(KVM) </span>
+                        <span>TemplateID: 1</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: win2008Sanboot</span>
+                        <span>ImageType: Windows2008</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: KVM</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os2" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Ubuntu.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Ubuntu10(KVM) </span>
+                        <span>TemplateID: 2</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: ubuntuSanboot</span>
+                        <span>ImageType: Ubuntu</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: KVM</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os3" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Fedora.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Fedora16(KVM) </span>
+                        <span>TemplateID: 3</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: fedoraSanboot</span>
+                        <span>ImageType: Fedora</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: KVM</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os4" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/CentOS.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: CentOS6.2(KVM) </span>
+                        <span>TemplateID: 4</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: centosSanboot</span>
+                        <span>ImageType: CentOS</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: KVM</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os5" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Windows7.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Windows7(KVM) </span>
+                        <span>TemplateID: 5</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: win7Sanboot</span>
+                        <span>ImageType: Windows7</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: KVM</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os6" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Ubuntu.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Ubuntu10(VMWARE) </span>
+                        <span>TemplateID: 6</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: ubuntuSanboot</span>
+                        <span>ImageType: Ubuntu</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: VMWARE</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os7" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Fedora.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Fedora16(VMWARE) </span>
+                        <span>TemplateID: 7</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: fedoraSanboot</span>
+                        <span>ImageType: Fedora</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: VMWARE</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os8" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/CentOS.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: CentOS6.2(VMWARE) </span>
+                        <span>TemplateID: 8</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: centosSanboot</span>
+                        <span>ImageType: CentOS</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: VMWARE</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os9" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Windows7.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Windows7(VMWARE) </span>
+                        <span>TemplateID: 9</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: win7VmwareSanboot</span>
+                        <span>ImageType: Windows7</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: VMWARE</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os10" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Windows2008.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Windows2008(VMWARE) </span>
+                        <span>TemplateID: 10</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: win2008VmwareSanboot</span>
+                        <span>ImageType: Windows2008</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: VMWARE</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os11" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Ubuntu.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Ubuntu10(PHY) </span>
+                        <span>TemplateID: 11</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: ubuntuSanboot</span>
+                        <span>ImageType: Ubuntu</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: PHY</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os12" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/Fedora.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: Fedora16(PHY) </span>
+                        <span>TemplateID: 12</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: fedoraSanboot</span>
+                        <span>ImageType: Fedora</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: PHY</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+            <div id="os13" class="accordion-inner detail-action">
+              <div class="cell row">
+                <hr style="visibility: hidden;">
+                <div class="span1">
+                  <div class="media-object middle-image">
+                    <img src="/resource/images/CentOS.png">
+                  </div>
+                </div>
+                <div class="media-body span4">
+                  <address>
+                    <div class="inline-div">
+                      <div id="ls_info1" class="cell-more-info">
+                        <span>Name: CentOS6.2(PHY) </span>
+                        <span>TemplateID: 13</span>
+                      </div><br>
+                      <div id="ls_info2" class="cell-more-info">
+                        <span>Image: centosSanboot</span>
+                        <span>ImageType: CentOS</span>
+                      </div>
+                      <div id="ls_info3" class="cell-extra-info">
+                        <span>PlatformType: PHY</span>
+                        <span>Description: Useful information</span>
+                      </div>
+                    </div>
+                  </address>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+var demoObj = {
+  localSearchFunc: function(event) {
+    var q = $('.ylsearch-lsbox :text').val().trim();
+    if (q === '') {
+      ylsearch.localSearchHelper.prepareSearchItems(function(obj) {
+        console.log(obj);
+        obj.parent().show();
+      });
+    } else {
+      ylsearch.localSearchHelper.prepareSearchItems(function(obj) {
+        obj.parent().hide();
+      });
+      ylsearch.localSearchHelper.search(q, function(index, element) {
+        $('[ylsearch_id="' + element.lsid + '"]').parent().show();
+      });
+    }
+  }
+};
+
+ylsearch.localSearchHelper.initDefaultSearchBox(demoObj,
+                                                $('.accordion'),
+                                                $(['ls_info1', 'ls_info2', 'ls_info3']));
+</script>
+</html>
